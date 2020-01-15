@@ -1,0 +1,110 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+
+@layout UserMainLayout
+@page "/MyOrders"
+
+<h1>My Order History</h1>
+
+@if (myOrders == null)
+{
+    <p>You Do not have Orders...!</p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>OrderId</th>
+                <th>ProductId</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var ord in myOrders)
+        {
+            <tr>
+                <td>@ord.OrderId</td>
+                <td>@ord.Product</td>
+                <td>@ord.Price</td>
+                <td>@ord.Quantity</td>
+                <td>@ord.OrderStatus</td>
+                <td> <button class="btn btn-info" onclick="@(()=>viewDetails(ord.Product))">ViewDetails</button></td>
+            </tr>
+
+        }
+            </tbody>
+        </table>
+
+    if (isView)
+    {
+        <div class="modal" tabindex="-1" style="display:block" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Product Details</h3>
+                        <button type="button" class="close" onclick="@closeModal">
+                            <span aria-hidden="true">X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="prodBox">
+                                <img src=@prod.Image style="width: 150px ;height: 200px;float:left;" alt="Card image cap">
+                                <div style="width: 60%;float:right; text-align:right">
+                                    <input type="hidden" />
+                                    <h2 class="card-title">@prod.Name</h2>
+                                    <p class="card-text">ID: @prod.Id</p>
+                                    <p class="card-text">Price: @prod.Price</p>
+                                    <p class="card-text">Category: @prod.Category</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    }
+
+}
+
+        @functions{
+
+            bool isView = false;
+            int listcount;
+            Orders[] myOrders;
+            Products prod;
+            protected override async Task OnInitAsync()
+            {
+                Console.WriteLine("User" + ThisUser.Usrnm);
+                myOrders = await Http.GetJsonAsync<Orders[]>("/api/Orders/user/" + ThisUser.Usrnm);
+
+            }
+
+            public async Task viewDetails(string prodId)
+            {
+                prod = await Http.GetJsonAsync<Products>("/api/Product/" + prodId);
+                isView = true;
+            }
+
+
+            public void printCountInList()
+            {
+                listcount = OrderList.cartItems.Count;
+            }
+
+            public void closeModal()
+            {
+                isView = false;
+            }
+
+        }

@@ -1,0 +1,62 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@layout AdminMainLayout
+@page "/EditProduct/{productID}"
+
+<h1>Hi, this is the Edit Product page</h1>
+
+<p>Please Edit your Product</p>
+
+<style>
+
+    .center {
+        margin: auto;
+        width: 17%;
+        border: solid;
+        border-radius: 10px;
+        border-color: lightgray;
+        border-width: 2px;
+        padding: 20px;
+    }
+
+    p {
+        color: red;
+    }
+
+    a {
+        float: right;
+    }
+</style>
+@if (prod == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <form class="Left">
+        Name : <br> <label>@prod.Name</label> <br>
+        Category : <br> <label>@prod.Category</label> <br>
+        Price : <br> <input type="text" bind="@prod.Price" /> <br><br />
+        <button onclick=@UpdateProduct type="button" class="btn btn-primary">Update</button>
+    </form>
+}
+@functions
+{
+    [Parameter]
+    private string productID { get; set; }
+    Products prod ;
+
+    protected override async Task OnInitAsync()
+    {
+        prod = await Http.GetJsonAsync<Products>
+            ("/api/Product/" + Convert.ToInt64(productID));
+    }
+
+    protected async Task UpdateProduct()
+    {
+        await Http.SendJsonAsync(HttpMethod.Put, "api/Product/" + Convert.ToInt64(productID) , prod);
+        UriHelper.NavigateTo("/AdminHome");
+    }
+
+}

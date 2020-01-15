@@ -1,0 +1,60 @@
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.blazor.config
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.runtimeconfig.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.runtimeconfig.dev.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Shared.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Shared.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csprojAssemblyReference.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorAssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorTargetAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csproj.CopyComplete
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.pdb
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.blazor.config
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.deps.json
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.runtimeconfig.json
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.runtimeconfig.dev.json
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.dll
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.pdb
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.dll
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Shared.dll
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.pdb
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Shared.pdb
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csprojAssemblyReference.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csproj.CoreCompileInputs.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorAssemblyInfo.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorAssemblyInfo.cs
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.AssemblyInfoInputs.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.AssemblyInfo.cs
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorTargetAssemblyInfo.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csproj.CopyComplete
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.dll
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.blazor.config
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.runtimeconfig.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.runtimeconfig.dev.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Server.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Shared.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Client.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\bin\Debug\netcoreapp2.1\ShoppingCart.Shared.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csprojAssemblyReference.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorAssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.RazorTargetAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.csproj.CopyComplete
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Server\obj\Debug\netcoreapp2.1\ShoppingCart.Server.pdb

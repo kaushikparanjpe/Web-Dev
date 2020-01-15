@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<style>
+   .body1{
+
+  background-image :linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://occ-0-2292-2568.1.nflxso.net/art/e61ba/06bdd62eee5c3dc95d9b48e693b422cea1ae61ba.jpg);
+   height : 105vh;
+   background-position: center;
+   background-size :cover;
+   margin-top: 0px;
+   margin-bottom: -10px
+  
+  }
+
+.body2{
+
+background-image :linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://wallpaper-house.com/data/out/8/wallpaper2you_245739.jpg);
+ height : 105vh;
+ background-position: center;
+ background-size :cover;
+ margin-top: -150px;
+ margin-bottom: -10px
+
+}
+
+
+  .divider{
+    width: 50px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .right {
+    background: url("https://occ-0-2292-2568.1.nflxso.net/art/e61ba/06bdd62eee5c3dc95d9b48e693b422cea1ae61ba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: auto;
+    
+    max-width: 4500px;
+    max-height: 100000px;
+    
+  }
+  h3,h5, img{
+    margin-left:20%;
+  }
+  p{
+    white-space: pre-wrap;
+    margin-top:9%; 
+    margin-left: 20%;
+    margin-right: auto;
+    color : white;
+  }
+
+  button{
+    margin-left: 20%;
+  }
+
+  .btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:15%;    
+}
+  
+</style>
+<div *ngIf="!instr_bool" class="body1">  
+<br>
+<br>
+
+<p>
+  {{story}}
+</p>
+
+  <a>
+  <button  (click)="level1()" type="submit" class="btn btn-dark btn-xl">Play</button>
+  </a>
+  <a>
+      <button  (click)="Resume()" type="submit" class="btn btn-dark btn-xl">Resume</button>
+      </a>
+      <br>
+      <br>
+      <button  (click)="showInstructions()" type="submit" class="btn btn-dark btn-xl" style="margin-left: 38%">Instructions</button>
+
+<br>
+<br>
+</div>
+
+<div *ngIf="instr_bool" class="body2">
+<p style="white-space: pre-wrap;">  
+  <br><br><h3 style="color:white">Instructions:</h3><br>
+
+  1. Select the Weapon from the Arsenal available by clicking on the image.<br>
+  2. After weapon is selected, Use the selected weapon on riht pane to strike monster.<br>
+  3. Click on another weapon to from Arsenal to switch the weapon.  <br>
+
+</p>
+
+<h5 style="color:white">Weapons Details:</h5>
+
+  <h5 style="color:white">Swords:</h5>
+    <img src ="https://t1.rbxcdn.com/186088aebc848fee77ed13f9d86fedeb"  width="100px" height="150px">
+    <img src="https://vignette1.wikia.nocookie.net/granblue/images/2/2b/Ice_Sword.png"  width="100px" height="150px">
+    
+    <h5 style="color:white">Thunder Balls:</h5>
+  <img src="https://i.kym-cdn.com/entries/icons/original/000/006/464/4StarDragonball.png" width="100px" height="150px">
+<img src="https://thedragonprince.com/wp-content/uploads/2018/08/stone.png" width="100px" height="150px">
+<br><br><button  (click)="showInstructions()" type="submit" class="btn btn-dark btn-xl">Back</button>
+</div>
+
+
+
+
+
+
+
+

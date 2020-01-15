@@ -1,0 +1,26 @@
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.pdb
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.deps.json
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.dll
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.pdb
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.csprojAssemblyReference.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.csproj.CoreCompileInputs.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.AssemblyInfoInputs.cache
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.AssemblyInfo.cs
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.dll
+C:\Northeastern Study material\Kaushik data\Received\10th December\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\bin\Debug\netstandard2.0\ShoppingCart.Shared.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.csprojAssemblyReference.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\FinalProject\Part3\ShoppingCart\ShoppingCart.Shared\obj\Debug\netstandard2.0\ShoppingCart.Shared.pdb

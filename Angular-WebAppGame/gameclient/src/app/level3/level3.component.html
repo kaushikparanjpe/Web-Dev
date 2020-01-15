@@ -1,0 +1,170 @@
+<p>
+  level3 works!
+</p>
+<style>
+  body {
+    font-family: Arial;
+    
+}
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:40%;    
+}
+.split {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background:url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-0.3.5&s=462ce3760e07232e4c973fc7368f57d4&w=1000&q=80');
+  background-size:auto;
+}
+
+.left img{
+    margin-top: 5%;
+    margin-left:20%;
+}
+
+.right {
+
+    right: 0;
+    background: url('https://apollo2.dl.playstation.net/cdn/UP4396/CUSA04449_00/FREE_CONTENTon9CP70wqvZbSo2qIpyg/PREVIEW_SCREENSHOT1_150431.jpg');
+    background-size:'auto';
+    width: 80%;
+    height: 100%;
+
+}
+.right img{
+  margin-top: 5%;
+  margin-left:40%;
+ }
+.right h1{
+  color: white;
+  margin-top: 3%;
+  margin-left:40%;
+}
+h2{
+  color: white;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h3{
+  color: white;
+    text-align: center;
+}
+p{
+  color: white;
+  position: absolute;
+  top: 10%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<div class="split left">
+  
+
+  <div>
+    <h3>Weapon Inventory</h3>
+    <div class ="row">
+    <div>
+    <img src ="https://t1.rbxcdn.com/186088aebc848fee77ed13f9d86fedeb"  style="border:1px solid #021a40;"
+    (click) = "UpdatePower()"  width="100px" height="150px" [ngStyle] = "{ 'display' : display}">
+    </div>
+    <div>
+    <img src="https://vignette1.wikia.nocookie.net/granblue/images/2/2b/Ice_Sword.png"  style="border:1px solid #021a40;"
+    (click) = "UpdatePower2()"  width="200px" height="150px"  [ngStyle] = "{ 'display' : display3}">
+  </div>
+  </div>
+    <div>
+  <h3>Thunder Ball Count</h3>
+
+      <div class ="row">
+      <div> 
+    <img src="https://i.kym-cdn.com/entries/icons/original/000/006/464/4StarDragonball.png" style="border: solid #021a40;"
+     (click)= "UpdatePower4()"width="100px" height="150px" [ngStyle] = "{ 'display' : display1}">  
+    </div>
+    <div>
+    <img src="https://thedragonprince.com/wp-content/uploads/2018/08/stone.png" style="margin-top:55%; margin-left:90%;border:solid #021a40;"
+    (click) = "UpdatePower3()" width ="65px" height="90px" [ngStyle] = "{'display' : display4}">
+    </div>
+    </div>
+    </div>
+    <br><br><br><br>
+    <button (click)="logout()"  class="btn btn-dark btn-xl" style="top:80%">Logout</button>
+</div>
+
+<div *ngIf="second" class="split right">
+  <div>
+      <br><br><br><h2>Welcome to level 3 </h2>
+  <a>
+  <button (click)="climb()"  class="btn btn-dark btn-xl">Climb</button>
+</a>
+</div>
+</div>
+  <div *ngIf="showmonster" class="split right">
+      <br><br><br><h2>You have reached the final level. Kill the monster to get dragon egg<br>
+        Use Right weapons.<br> Save the world </h2>
+      <button (click)="Next()"  class="btn btn-dark btn-xl">Keep Walking......</button>
+  </div>
+  <div *ngIf ="next1" class="split right">
+      <br><br><br><h2>Monster is approaching<br>
+          You can use thunderball<br>
+        Be careful all weapons have limited usage <br> GOOD LUCK!!! </h2>
+      <button (click)="fight()"  class="btn btn-dark btn-xl">Monster ahead</button>
+    </div>
+  <div *ngIf ="fightmonster" class="split right">
+    <h1> Please select the weapon</h1>
+  <img src= "https://vignette.wikia.nocookie.net/dragons-crown/images/0/0e/Arch_Demon.png/revision/latest?cb=20140213034015"
+   width="300px"
+    height="250px" style="border-image-outset:3px">
+  
+
+  
+</div>
+<div *ngIf ="powerfight" class ="split right">
+  <h2>Kill Before Time is up : {{timeLeft}}</h2>
+  <br>
+  <div>
+      <img src= "https://vignette.wikia.nocookie.net/dragons-crown/images/0/0e/Arch_Demon.png/revision/latest?cb=20140213034015"
+       width="300px"
+  height="250px" style="border-image-outset:3px"  [ngStyle] = "{ 'display' : display2}">
+  <br>
+  <br><br>
+  <h2>{{power}}</h2>
+</div>
+<div >
+    <img  *ngIf="weapon1" src ="https://t1.rbxcdn.com/186088aebc848fee77ed13f9d86fedeb" width="200px" height="250px" 
+    (click) = powerReduce()>
+    <img *ngIf="weapon2" src="https://vignette1.wikia.nocookie.net/granblue/images/2/2b/Ice_Sword.png" 
+    (click) = "powerReduce2()"  width="250px" height="300px" style="" >
+    <img *ngIf="weapon3" src="https://thedragonprince.com/wp-content/uploads/2018/08/stone.png"
+    (click) ="powerReduce3()"  width="100px" height="150px" >
+    <img *ngIf="weapon4" src="https://i.kym-cdn.com/entries/icons/original/000/006/464/4StarDragonball.png"
+    (click) ="powerReduce4()"  width="100px" height="150px" >
+  </div>
+</div>

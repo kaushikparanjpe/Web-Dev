@@ -1,0 +1,105 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+
+@layout UserMainLayout
+
+@page "/cart"
+
+<h1>MyCart</h1>
+
+
+
+
+<style>
+    .prodBox {
+        border: solid;
+        border-color: lightgray;
+        border-width: 2px;
+        padding: 10px;
+        height: 450px;
+        width: 800px;
+        /*position: absolute; /*or fixed*/
+    }
+</style>
+
+@if (orders.Count == 0)
+{
+    <p>@msg</p>
+}else if (po.Count == 0)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var ord in orders)
+    {
+
+        <div class="row">
+            <div class="prodBox">
+                <img src=@po[ord.Product].Image style="width: 150px ;height: 200px;float:left;" alt="Card image cap">
+                <div style="width: 60%;float:right; text-align:right">
+                    <input type="hidden" />
+                    <h2 class="card-title">@po[ord.Product].Name</h2>
+                    <p class="card-text">ID: @po[ord.Product].Id</p>
+                    <p class="card-text">Total Price: @ord.Price</p>
+                    <p class="card-text">Category: @po[ord.Product].Category</p>
+                    <p class="card-text"> Quantity:@ord.Quantity</p><br><br>
+                    <button class="btn btn-info" onclick=@(()=>RemoveFromCart(ord)) type="button">Remove</button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <button class="btn btn-info" onclick=@PlaceOrder type="button" disabled="@btnDisable">Place Order</button>
+
+}
+
+
+
+@functions{
+    List<Orders> orders = OrderList.cartItems;
+    Dictionary<string, Products> po;
+    bool btnDisable = true;
+    string msg = "No Items in Cart..!";
+
+
+
+    private void RemoveFromCart(Orders ord)
+    {
+        orders.Remove(ord);
+        this.StateHasChanged();
+    }
+
+
+    private async Task PlaceOrder()
+    {
+        foreach (Orders o in orders)
+        {
+            await Http.PostJsonAsync("/api/Orders/", o);
+        }
+        orders.Clear();
+        msg = "Orders has been Placed...!";
+    }
+
+    protected override async Task OnInitAsync()
+    {
+        po = new Dictionary<string, Products>();
+        foreach (Orders o in orders)
+        {
+            Products prod = await Http.GetJsonAsync<Products>("/api/Product/" + o.Product);
+            po.Add(prod.Id.ToString(), prod);
+            Console.WriteLine("Product:" + prod.Id.ToString());
+            Console.WriteLine("Product:" + po[prod.Id.ToString()]);
+
+        }
+
+        if (orders.Count > 0)
+        {
+            btnDisable = false;
+        }
+
+    }
+
+
+}

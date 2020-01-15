@@ -1,0 +1,57 @@
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<style>
+    .container {
+    margin: auto;
+    width: 17%;
+    
+    color: white;
+    height: 100%
+    }
+    
+    a{
+    float: right;
+    color: whitesmoke;
+    }
+    .body1{
+
+background-image :linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://occ-0-2292-2568.1.nflxso.net/art/e61ba/06bdd62eee5c3dc95d9b48e693b422cea1ae61ba.jpg);
+ height : 105vh;
+ background-position: center;
+ background-size :cover;
+ margin-top: -5px;
+ margin-left: -20px;
+ margin-right: -20px; 
+ margin-bottom: -20px;
+
+}
+.center{
+  padding: 100px 0;
+  border: 3px black;
+  
+}
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    width:40%;   
+}
+</style>
+    
+    <body >
+      <div class="body1">
+        <div class="center" >
+          <p style="margin-left:43%;color:white;"> Please Sign Up to Play </p>
+        <form class = "container" >
+          Username: <br> <input type="text" name = "usernm" [(ngModel)]="_user" /> <br><br /> 
+          Password: <br> <input type="password" name = "pwd" [(ngModel)]="_pwd"/><br><br />
+          <button type="submit" class="btn btn-dark btn-xl" (click)="verifyUser()">Login</button> &nbsp;&nbsp; <button type="button" class="btn btn-dark btn-xl"(click)="signupuser()">SignUp</button>        
+      </form>    
+    </div>  
+    </div>
+
+  </body>
+  </html>

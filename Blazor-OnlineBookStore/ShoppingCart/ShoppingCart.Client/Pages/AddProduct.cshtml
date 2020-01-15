@@ -1,0 +1,31 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@layout AdminMainLayout
+@page "/AddProduct"
+
+<h1>Hi, this is the Add Product page</h1>
+
+<p>Please add your Product</p>
+
+<form class="Left">
+    Name : <br> <input type="text" bind="@prod.Name" required="true"/><br />
+    Category : <br> <input type="text" bind="@prod.Category" /><br />
+    Price : <br> <input type="text" bind="@prod.Price" required="true"/> <br />
+    Image url : <br> <input type="text" bind="@prod.Image" /> <br />
+    <button onclick=@(async () => await CreateProduct()) type="button" class="btn btn-primary">Create</button>
+</form>
+
+@functions
+{
+    Products prod = new Products();
+
+
+    protected async Task CreateProduct()
+    {
+        Random rn = new Random();
+        prod.Id = rn.Next(0, Int32.MaxValue);
+        await Http.SendJsonAsync(HttpMethod.Post, "/api/Product", prod);
+        UriHelper.NavigateTo("/AdminHome");
+    }
+}

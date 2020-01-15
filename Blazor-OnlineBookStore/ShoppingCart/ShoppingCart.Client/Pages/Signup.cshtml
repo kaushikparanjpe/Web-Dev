@@ -1,0 +1,60 @@
+﻿@using ShoppingCart.Shared.Models
+@page "/UserSignup"
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@inject HttpClient Http
+
+<style>
+
+    .center {
+        margin: auto;
+        width: 17%;
+        border: solid;
+        border-radius: 10px;
+        border-color: lightgray;
+        border-width: 2px;
+        padding: 20px;
+    }
+
+    p {
+        color: red;
+    }
+
+    a {
+        float: right;
+    }
+</style>
+
+<form class="center">
+    Username: <br> <input type="text" bind="@signUpUser.UserId" /> <br><br />
+    Password: <br> <input type="password" bind="@signUpUser.Password" /><br><br />
+    <button onclick=@(async () => await CreateUser()) type="button" class="btn btn-primary">Create</button>
+    <label>@x</label>
+</form>
+
+@functions{
+    public string usrid { get; set; }
+    public string pwd { get; set; }
+
+    string x;
+    Users usr;
+    Users signUpUser = new Users();
+
+    protected async Task CreateUser()
+    {
+        try
+        {
+            usr = await Http.GetJsonAsync<Users>("/api/Users/" + signUpUser.UserId);
+            x = "UserId already present, please use another UserId";
+        }
+
+        catch
+        {
+            signUpUser.Role = "User";
+            await Http.SendJsonAsync(HttpMethod.Post, "/api/Users", signUpUser);
+            x = "User is created Successfully!";
+            UriHelper.NavigateTo("/");
+        }
+
+    }
+
+}

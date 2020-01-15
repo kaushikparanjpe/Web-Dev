@@ -1,0 +1,73 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@page "/AdminHome"
+@layout AdminMainLayout
+
+<h1>Hello Admin </h1>
+
+Welcome to your new app.
+
+<style>
+    .prodBox {
+        border: solid;
+        border-color: lightgray;
+        border-width: 2px;
+        padding: 10px;
+        height: 450px;
+        width: 800px;
+        
+    }
+</style>
+
+@if (prodList == null)
+{
+    <p><em>Loading...</em></p>
+}
+
+else
+{
+    @foreach (var prod in prodList)
+    {
+        <div class="col-md-4 prodBox">
+            <img src=@prod.Image style=" width: 150px ;height: 200px; float:left" alt="Card image cap">
+            <div style="width: 60%; float:right; text-align:right">
+                <input type="hidden" />
+                <h2 class="card-title">@prod.Name</h2>
+                <p class="card-text">ID: @prod.Id</p>
+                <p class="card-text">Price: @prod.Price</p>
+                <p class="card-text">Category: @prod.Category</p>
+                Quantity: <input type="number" #_qty min="1" id="qty" /><br><br>
+                <button class="btn btn-info" onclick=@(() => EditProduct(prod)) type="button">Edit Product</button> <button class="btn btn-info" onclick=@(() => DeleteProduct(prod)) type="button">Delete Product</button>
+                
+            </div>
+        </div>
+
+    }
+
+}
+
+@functions {
+    public Products[] prodList;
+    public Products[] CartList;
+
+    public int qty { get; set; }
+
+
+    protected override async Task OnInitAsync()
+    {
+        prodList = await Http.GetJsonAsync<Products[]>("/api/Product/");
+
+    }
+
+    public void EditProduct(Products p)
+    {
+        UriHelper.NavigateTo("/EditProduct/" + p.Id);
+    }
+
+    protected async Task DeleteProduct(Products p)
+    {
+        await Http.SendJsonAsync(HttpMethod.Delete, "api/Product/" + Convert.ToInt64(p.Id), p);
+        this.StateHasChanged();
+    }
+}

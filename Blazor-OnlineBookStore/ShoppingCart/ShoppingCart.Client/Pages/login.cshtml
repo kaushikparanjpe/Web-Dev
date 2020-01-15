@@ -1,0 +1,89 @@
+﻿@using ShoppingCart.Shared.Models
+@page "/"
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@inject HttpClient Http
+
+<style>
+
+    .center {
+        margin: auto;
+        width: 17%;
+        border: solid;
+        border-radius: 10px;
+        border-color: lightgray;
+        border-width: 2px;
+        padding: 20px;
+    }
+
+    p {
+        color: red;
+    }
+
+    a {
+        float: right;
+    }
+</style>
+<form class="center">
+    Username: <br> <input type="text" bind="@usrid" /> <br><br />
+    Password: <br> <input type="password" bind="@pwd" /><br><br />
+    @*<p><input type="text" bind="@test" /></p>*@
+    <button onclick=@verifyUser type="button" class="btn btn-primary">Login</button>
+    <button onclick=@signUpUser type="button" class="btn btn-primary">Sign up</button>
+    
+</form>
+
+@functions{
+
+    public string usrid { get; set; }
+    public string pwd { get; set; }
+    public string test { get; set; }
+
+    public Users usr ;
+
+    /*
+    private  void navigate(Users usr)
+    {
+        Console.WriteLine(u.ToString());
+        Console.WriteLine("In Navigate");
+        if (usr.UserId.Equals(usrid) && usr.Password.Equals(pwd))
+        {
+            test = "chek due";
+            // UriHelper.NavigateTo("/home");
+        }else
+        {
+            //UriHelper.NavigateTo("/home");
+            test = "check baby";
+            Console.WriteLine("Invalid UserName or Password");
+        }
+
+    }
+    */
+
+    private async Task goTo()
+    {
+        usr = await Http.GetJsonAsync<Users>("/api/Users/" + usrid);
+
+    }
+
+    private async Task verifyUser()
+    {
+        usr = await Http.GetJsonAsync<Users>("/api/Users/" + usrid);
+        ThisUser.Usrnm = usr.UserId;
+        ThisUser.usr_role = usr.Role;
+        //    u = await Http.GetJsonAsync<Users>("/api/Users/" + UserId);
+
+        if (usr.UserId.Equals(usrid) && usr.Password.Equals(pwd) && (!usr.Role.Equals("admin")))
+        {
+            UriHelper.NavigateTo("/UserHome");
+        }
+        else if (usr.UserId.Equals(usrid) && usr.Password.Equals(pwd) && usr.Role.Equals("admin"))
+        {
+            UriHelper.NavigateTo("/AdminHome");
+        }
+    }
+
+    private void signUpUser()
+    {
+        UriHelper.NavigateTo("/UserSignup");
+    }
+}

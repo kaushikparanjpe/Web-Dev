@@ -1,0 +1,44 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@page "/home"
+@layout MainLayout
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+
+@if (usr == null)
+{
+    <p><em>Loading...</em></p>
+}
+
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>PWD</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+                <tr>
+                    <td>@usr.UserId</td>
+                    <td>@usr.Password</td>
+                    <td>@usr.Role</td>
+                </tr>
+            
+        </tbody>
+    </table>
+}
+@functions {
+Users usr ;
+protected override async Task OnInitAsync()
+{
+    usr = await Http.GetJsonAsync<Users>("/api/Users/admin");
+}
+}

@@ -1,0 +1,56 @@
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.dev.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csprojAssemblyReference.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.deps.json
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.json
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.dev.json
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csprojAssemblyReference.cache
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cache
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cs
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfoInputs.cache
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfo.cs
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\galia\Desktop\Info6250\Mid_Project\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.dev.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csprojAssemblyReference.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part3\WebApi\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.deps.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.runtimeconfig.dev.json
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\bin\Debug\netcoreapp2.1\WebApi.pdb
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csprojAssemblyReference.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorAssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.AssemblyInfo.cs
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.dll
+C:\Users\hp\Documents\NEU Subjects\Fall 2018\WebDev\MidTermProject\Part4\WebApi\WebApi\obj\Debug\netcoreapp2.1\WebApi.pdb

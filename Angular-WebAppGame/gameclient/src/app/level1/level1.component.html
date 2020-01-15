@@ -1,0 +1,252 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    body {
+      font-family: Arial;
+      
+  }
+  
+  .split {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+  }
+  .left img{
+    margin-top: 5%;
+    margin-left:20%;
+}
+  .left {
+      left: 0;
+    background:url('https://www.hdwallpaper.nu/wp-content/uploads/2015/02/brown_textures_wallpaper-14598.jpg');
+  }
+  
+  .right {
+      right: 0;
+      width: 80%;
+    height: 100%;
+  }
+  #level1{
+    background-image:url('http://deadinvinland.com/wp-content/uploads/2017/07/drought-1.jpg');
+    width: 80%;
+    height: 100%;
+  }
+
+  #level2{
+    background-image:url('https://66.media.tumblr.com/640cba67998f3589e9c5473546226cd7/tumblr_pf6nzp58AF1u1b421o6_r2_1280.png');
+    width:80%;
+    height:100%;
+  }
+
+   .right img{
+    margin-top: 5%;
+    margin-left:40%;
+   }
+  .right h1{
+    color: white;
+    margin-top: 3%;
+    margin-left:40%;
+  }
+  p{
+    color: white;
+    font-style: oblique;
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  h2{
+  color: white;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+  h3{
+     color: white;
+    text-align: center;
+  }
+
+  .btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:40%;    
+}
+
+</style>
+<div class="split left">
+
+   <div>
+    <h3>Weapon Inventory</h3>
+    <div class ="row">
+    <div>
+    <img src ="https://t1.rbxcdn.com/186088aebc848fee77ed13f9d86fedeb"  style="border:1px solid #021a40;"
+    (click) = "UpdatePower()"  width="100px" height="150px" [ngStyle] = "{ 'display' : display}">
+    </div>
+    <div>
+    <img src="https://vignette1.wikia.nocookie.net/granblue/images/2/2b/Ice_Sword.png"  style="border:1px solid #021a40;"
+    (click) = "UpdatePower2()"  width="200px" height="150px"  [ngStyle] = "{ 'display' : display3}">
+  </div>
+  </div>
+  </div>
+    <div>
+  <h3>Thunder Ball Count</h3>
+      <div class ="row">
+      <div> 
+    <img src="https://i.kym-cdn.com/entries/icons/original/000/006/464/4StarDragonball.png" style="border: solid #021a40;"
+     (click)= "UpdatePower4()"width="100px" height="150px" [ngStyle] = "{ 'display' : display1}">  
+    </div>
+    <div>
+    <img src="https://thedragonprince.com/wp-content/uploads/2018/08/stone.png" 
+    style="margin-top:55%; margin-left:90%;border:solid #021a40;"
+    (click) = "UpdatePower3()" width ="65px" height="90px" [ngStyle] = "{'display' : display4}">
+    </div>
+    </div>
+    </div>
+    <button (click)="logout()"  class="btn btn-dark btn-xl" style="top:80%">Logout</button>
+  </div> 
+
+
+<div class ="split right" id ="level1" > 
+  <div *ngIf="second" class="split right"id="level1" >
+
+<h2>
+  <br><br><br>
+  {{levelone}}
+</h2>
+  <a>
+
+  <button (click)="climb()"  class="btn btn-dark btn-xl">Climb</button>
+  </a>
+</div>
+<div *ngIf="showmonster" class="split right"id ="level1">
+<h2>You are about to save the world</h2> 
+<button (click)="Next()" class="btn btn-dark btn-xl">Keep Walking......</button>
+</div>
+<div *ngIf ="next1" class="split right"id ="level1">
+ <h2> Monster is approaching</h2>
+  <button (click)="fight()"  class="btn btn-dark btn-xl">Monster ahead</button>
+</div>
+<div *ngIf ="fightmonster" class="split right" id ="level1">
+
+  <img src= "https://vignette.wikia.nocookie.net/dragonprince/images/7/7a/BaitFull.png/revision/latest?cb=20180916191227" width="200"
+  height="250" style="border-image-outset:3px">
+  <h1> Monster is here</h1>
+  <h1> Please select the weapon</h1>
+</div>
+<div *ngIf ="powerfight" class ="split right" id ="level1">
+    <h2>Kill Before Time is up : {{timeLeft}}</h2>
+  <div>
+      <img src= "https://vignette.wikia.nocookie.net/dragonprince/images/7/7a/BaitFull.png/revision/latest?cb=20180916191227" width="200"
+  height="250" style="border-image-outset:3px"  [ngStyle] = "{ 'display' : display}">
+  <br>
+  <br>
+  <br>
+  <h2>{{power}}</h2>  
+</div>
+  <div>
+      <img src ="https://t1.rbxcdn.com/186088aebc848fee77ed13f9d86fedeb" width="200px" height="250px"
+      (click) = powerReduce()>
+
+  </div>
+</div>
+</div>
+
+<div *ngIf= "level2" class="split right " id="level2">
+    <div *ngIf="showmonster1" class="split right" id="level2">
+    <h2>Welcome to Level 2 </h2>
+        <button (click)="Next2()" class="btn btn-dark btn-xl">Keep Walking......</button>
+        </div>
+        <div *ngIf ="next1" class="split right" id="level2">
+        <h2>monster is approaching</h2>
+          <button (click)="fight2()" class="btn btn-dark btn-xl">Monster ahead</button>
+        </div>
+        
+        
+
+</div>
+<div *ngIf ="fightmonster2" class="split right" id ="level2">
+
+  <img src="https://art.ngfiles.com/images/231000/231375_geekpower_demon-logo.png?f1357613116" width="200px"
+  height="250px" style="border-image-outset:3px">
+  <h2>  Monster is here</h2>
+  <h1> Please select the weapon</h1>
+</div>
+<div *ngIf= "powerfight1" class="split right"  id="level2">
+  <h2>Kill Before Time is up....{{timeLeft}}</h2>
+  <div>
+      <img src= "https://art.ngfiles.com/images/231000/231375_geekpower_demon-logo.png?f1357613116" width="200"
+  height="250" style="border-image-outset:3px"  [ngStyle] = "{ 'display' : display2}">
+  <br>
+  <br>
+  <br>
+  <h2>{{power}}</h2>
+  </div>
+  <div>
+    <img src ="https://t1.rbxcdn.com/186088aebc848fee77ed13f9d86fedeb" width="200px" height="250px"
+    (click) = powerReduce2()>
+
+  </div>
+</div>
+
+<div *ngIf="wander" class ="split right"  id="level2"> 
+
+    <div *ngIf="showmonster" class="split right"  id="level2">
+    <h2> Search for the magic sword in the forest<br>To kill the monster </h2>
+        <button (click)="Next1()" class="btn btn-dark btn-xl">Keep Walking......</button>
+        </div>
+        <div *ngIf="next4" class="split right"id="level2">
+        <h2> Search before thr monster is aware about your position<br>
+                  HURRYYY!!!<br>  </h2>
+            <button (click)="fight3()" class="btn btn-dark btn-xl">Almost There</button>
+        </div>
+        <div *ngIf="next5" class="split right"  id="level2">
+        <br><br><h2>  Energy point received (10 points) </h2>
+            <button (click)="fight4()" class="btn btn-dark btn-xl">Weapon Received</button>
+        </div>
+
+</div>
+<div *ngIf="next3" class="split right" id="level2">
+<br><br><h2>Yayy!!! you got extra points now are able to get advanced weapon <br> 
+  Go kill the monster.</h2>
+  <button (click) = fight5()  class="btn btn-dark btn-xl"> Go fight</button>
+</div>
+
+
+<div *ngIf ="fightmonster3" class="split right" id="level2">
+
+    <img src= "https://art.ngfiles.com/images/231000/231375_geekpower_demon-logo.png?f1357613116" width="200px"
+    height="250px" style="border-image-outset:3px">
+    <h2> Monster is here Yep </h2>
+    <h1> Please select the weapon</h1>
+  </div>
+  <div *ngIf= "powerfight2" class="split right" id="level2">
+    <h2>Kill Before Time is up....{{timeLeft}}</h2>
+    <div>
+        <img src= "https://art.ngfiles.com/images/231000/231375_geekpower_demon-logo.png?f1357613116" width="200"
+    height="250" style="border-image-outset:3px"  [ngStyle] = "{ 'display' : display2}">
+    <br>
+    <br><br>
+    <h2>{{power}}</h2>
+    </div>
+    <div>
+      <img src ="https://vignette1.wikia.nocookie.net/granblue/images/2/2b/Ice_Sword.png" width="200px" height="250px"
+      (click) = powerReduce3()>
+    </div>
+  </div>

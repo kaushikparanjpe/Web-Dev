@@ -1,0 +1,58 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@page "/ProcessOrders"
+@layout UserMainLayout
+
+
+@if (orders.Count == 0)
+{
+    <p>No Orders to Process</p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>OrderId</th>
+                <th>ProductId</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ord in orders)
+            {
+                <tr>
+                    <td>@ord.OrderId</td>
+                    <td>@ord.Product</td>
+                    <td>@ord.Price</td>
+                    <td>@ord.Quantity</td>
+                    <td>@ord.OrderStatus</td>
+                    <td> <button class="btn btn-info" onclick="@(()=>Process(ord))">Process Order</button></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+
+@functions{
+    List<Orders> orders = new List<Orders>();
+
+    protected override async Task OnInitAsync()
+    {
+        Console.WriteLine("User" + ThisUser.Usrnm);
+
+        orders = await Http.GetJsonAsync<List<Orders>>("/api/Orders/status/");
+
+    }
+
+    public async Task Process(Orders o)
+    {
+        o.OrderStatus = "shipped";
+        await  Http.PutJsonAsync("/api/Orders/" + o.OrderId, o);
+        orders.Remove(o);
+    }
+}

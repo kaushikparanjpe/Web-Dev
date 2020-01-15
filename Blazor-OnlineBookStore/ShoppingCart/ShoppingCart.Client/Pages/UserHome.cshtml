@@ -1,0 +1,94 @@
+﻿@inject HttpClient Http
+@using ShoppingCart.Shared.Models
+@inject Microsoft.AspNetCore.Blazor.Services.IUriHelper UriHelper
+@page "/UserHome"
+@layout UserMainLayout
+
+<h1>Welcome to Online Book Store!</h1>
+
+
+
+
+<style>
+    .prodBox {
+        border: solid;
+        border-color: lightgray;
+        border-width: 2px;
+        padding: 10px;
+        height: 450px;
+        width: 800px;
+        /*position: absolute; /*or fixed*/
+    }
+</style>
+
+@if (prodList == null)
+{
+    <p><em>Loading...</em></p>
+}
+
+else
+{
+    //<input type="text" bind="@searchString"/> <button onclick=@(() => searchProduct()) type="button">AddToCart</button>
+    @foreach (var prod in prodList)
+    {
+        <div class="row">
+            <div class="prodBox">
+                <img src=@prod.Image style="width: 150px ;height: 200px;float:left;" alt="Card image cap">
+                <div style="width: 60%;float:right; text-align:right">
+                    <input type="hidden" />
+                    <h2 class="card-title">@prod.Name</h2>
+                    <p class="card-text">Price: @prod.Price</p>
+                    <p class="card-text">Category: @prod.Category</p>
+                    Quantity: <input data-bind="@qty" type="number" min="1" bind="@qty" /><br><br>
+                    <button class="btn btn-info" onclick=@(() => AddToCart(prod)) type="button">AddToCart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+    }
+
+}
+
+
+@functions {
+    public Products[] prodList;
+    public Products[] CartList;
+    public string searchString;
+    //public OrderList ol = new OrderList();
+
+    //private readonly Random random = new Random();
+
+    int qty;
+
+    protected override async Task OnInitAsync()
+    {
+        prodList = await Http.GetJsonAsync<Products[]>("/api/Product/");
+
+    }
+
+
+    public async Task searchProduct()
+    {
+        prodList = await Http.GetJsonAsync<Products[]>("/api/Product/Name/" + searchString);
+    }
+
+    public void AddToCart(Products p)
+    {
+        Console.WriteLine(ThisUser.Usrnm);
+        Orders o = new Orders();
+        o.Price = p.Price * qty;
+        Console.WriteLine(o.Price);
+        o.Product = p.Id.ToString();
+        o.UserId = ThisUser.Usrnm;
+        o.Quantity = qty;
+        o.OrderStatus = "placed";
+
+        Console.WriteLine(o.OrderId);
+        //o.OrderId = (long)random.Next(0, 100);
+        OrderList.cartItems.Add(o);
+
+        Console.WriteLine(OrderList.cartItems.Count);
+
+    }
+}
